@@ -21,7 +21,6 @@ module.exports = function (app) {
         let size = 0;
         if (!isDir) {
           size = fs.statSync(base + path + '/' + item);
-          console.log(size.size);
         }
 
         return {
